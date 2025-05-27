@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "AI Helper",
+  "version": "0.1",
+  "author": "Lokesh Babu",
+  "description": "A Chrome Extension that provides an AI helper to guide users in solving problems on AZ",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://maang.in/*"],
+      "js": ["lib/marked.min.js", "content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources" : [
+    {
+      "resources": [
+        "assets/ai-icon.png",
+        "assets/deleteBin.svg",
+        "assets/copy.png",
+        "assets/tickmark.png",
+        "inject.js"
+      ],
+      "matches" : ["https://maang.in/*"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "assets/ai-ext-icon.png",
+      "24": "assets/ai-ext-icon.png",
+      "32": "assets/ai-ext-icon.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "AI helper to guide users in solving problems on AZ"
+  }
+}

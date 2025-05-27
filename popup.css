@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 480px;
+  height: 200px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-container {
+  text-align: center;
+  padding: 1.2rem;
+  width: 100%;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.subtext {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.save-button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+
+.add-status-message {
+    color:  white;
+    background-color: lightgreen;
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+    width: 60%;
+    margin: 0.5rem auto;
+}
